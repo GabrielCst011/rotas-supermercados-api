@@ -1,14 +1,14 @@
 package com.devsgg.rotassupermercadosapi.dto;
 
+import lombok.Getter;
+
+@Getter
 public class LoginResponseDTO {
 
-    private String message;
+    private String token;
 
-    public LoginResponseDTO(String message) {
-        this.message = message;
+    public LoginResponseDTO(String token) {
+        this.token = token;
     }
 
-    public String getMessage() {
-        return message;
-    }
 }
